@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FFD700;
+            --secondary-color: #8B0000;
+            --background-gradient: linear-gradient(135deg, #FFD700 40%, #8B0000 100%);
+        }
+
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            background: var(--background-gradient);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Invitation Card */
+        .invitation-card {
+            background: linear-gradient(to bottom, #FFF8DC, #FFE4B5);
+            border-radius: 20px;
+            border: 15px solid var(--primary-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 25px;
+            position: relative;
+            color: #5A3E1B;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .card-header > * {
+            margin: 10px 0;
+        }
+
+        .ganesh-icon img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .sacred-text {
+            font-size: 20px;
+            color: var(--secondary-color);
+        }
+
+        .tagline {
+            font-size: 20px;
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+
+        /* Content Section */
+        .main-greeting {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-top: 15px;
+        }
+
+        .quote {
+            font-size: 18px;
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+
+        .details {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        
+        
+        /* Branding Container */
+.branding-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFF8DC; /* Royal beige background */
+    border: 5px solid #8B0000; /* Maroon border for richness */
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Subtle depth */
+}
+
+/* Branding Wrapper */
+.branding-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+}
+
+/* Logo Styling */
+.logo-container {
+    background-color: #fff; /* Gold background for luxury */
+    border-radius: 15%;
+    padding: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.business-logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%; /* Ensures logo stays within a circle */
+}
+
+/* Text Styling */
+.branding-text {
+    text-align: left;
+}
+
+.business-name {
+    font-size: 35px; /* Slightly smaller for balance */
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #8B0000; /* Deep maroon for tradition */
+    letter-spacing: 2px; /* Spacing for elegance */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle depth */
+}
+
+.tagline {
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+    color: #5A3E1B; /* Warm brown for text */
+    margin-top: 8px;
+    border-top: 2px solid #FFD700; /* Gold underline effect */
+    padding-top: 15px;
+}
+
+.highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .event-details {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .event-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .event-details li {
+            margin: 10px 0;
+            color: #5A3E1B;
+        }
+
+        .offer {
+            font-size: 18px;
+            margin-top: 20px;
+            color: var(--secondary-color);
+        }
+
+        /* Family Businesses */
+        .family-businesses ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .family-businesses li {
+            flex: 1 1 calc(50% - 10px);
+            color: #5A3E1B;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Footer Section */
+        .card-footer {
+            margin-top: 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .divider {
+            width: 50px;
+            height: 5px;
+            background-color: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        .closing-quote {
+            font-size: 16px;
+            font-style: italic;
+            color: #5A3E1B;
+        }
+
+        /* Print-specific Styles */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .container {
+                justify-content: flex-start;
+            }
+
+            .invitation-card {
+                box-shadow: none;
+                border: 15px solid var(--primary-color);
+                padding: 20px;
+                width: 100%;
+            }
+
+            .print-btn {
+                display: none;
+            }
+
+            /* Hide the text box for guest name during printing */
+            .guest-name-input {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <div class="card-header">
+                <div class="ganesh-icon">
+                    <img src="https://png.pngtree.com/png-vector/20231227/ourmid/pngtree-lord-ganesh-png-image_11385250.png" alt="Lord Ganesh">
+                </div>
+                <p class="sacred-text">।। Sri Ganeshya Namah ।।</p>
+            </div>
+            <div class="card-content">
+                <!-- Textbox to input guest name -->
+                <input type="text" id="guestName" class="guest-name-input" placeholder="Enter Guest Name" oninput="updateGuestName()">
+                <p class="tagline">Mr. <span id="guestNamePlaceholder">...............................................................................</span>,</p>
+                <p class="quote">"Every joy associated with taste is shared with loved ones."</p>
+                <p class="details">
+                    With the divine blessings of Shri Bholedasji Maharaj, we are proud to unveil our new venture</p>
+                    <div class="branding-container">
+                        <div class="branding-wrapper">
+                            <div class="logo-container">
+                                <img src="logo.png" alt="राजशाही नमकीन Logo" class="business-logo">
+                            </div>
+                            <div class="branding-text">
+                                <h1 class="business-name">RAJSHAHI NAMKEEN</h1>
+                                <p class="tagline">A Delightful Fusion of Taste and Tradition</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="details">
+                        Your gracious presence on this momentous occasion would bring us immense honor and good fortune.</p>
+                
+                <div class="event-details">
+                    <h3>Grand Opening</h3>
+                    <ul>
+                        <li><strong>Date:</strong> 12th December 2024, Thursday</li>
+                        <li><strong>Time:</strong> 11:51 AM</li>
+                        <li><strong>Place:</strong> #14-3-261/2/B, Seven Heaven Resturant,<br> Begum Bazar, Hyderabad - 500012</li>
+                    </ul>
+                </div>
+                <p class="offer">
+                    <strong>Our Offerings:</strong> Sweets and snacks made from pure Desi Ghee – a tradition of love and quality in every bite.<P></P>
+                    <strong>Inaugurated By:</strong> Shri Bholedasji Maharaj
+                </p>
+                <div class="special-request">
+                    <h3 style="color: var(--secondary-color)">Special Requests by</h3>
+                    <ul>
+                        <li>Shri Ganshyam Ji Bhati (JJ Dry Fruits)</li>
+                        <li>Shri Avinash Ji Devda</li>
+                        <li>Shri Suresh Ji Sankhla (Suru Bhai)</li>
+                        <li>Shri Pannalal Ji Tak (Nalgonda)</li>
+                    </ul>
+                </div>
+                <div class="family-businesses">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 5px; font-size: 18px;">With Best Compliments from:</h3>
+                    <ul>
+                        <li>Balaji Family Dhaba, Lingampalli, Hyderabad</li>
+                        <li>Nareshkumar Sankhla, Chartered Accountant, Malakpet, Hyderabad</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <p><strong>Humble Request</strong> Anil Kumar Sankhla, Naresh Kumar Sankhla</p>
+                <p><strong>Contact:</strong> 9030747299 / 9398991181</p>
+                <div class="divider"></div>
+                <p class="closing-quote">"Your presence would make our beginning even more delightful and inspiring."</p>
+            </footer>
+            <button class="print-btn" onclick="window.print()">Print Invitation</button>
+        </div>
+    </div>
+
+    <script>
+        function updateGuestName() {
+            var guestName = document.getElementById("guestName").value;
+            var guestNamePlaceholder = document.getElementById("guestNamePlaceholder");
+            if (guestName) {
+                guestNamePlaceholder.textContent = guestName;
+            } else {
+                guestNamePlaceholder.textContent = '...............................................................................';
+            }
+        }
+    </script>
+</body>
+</html>

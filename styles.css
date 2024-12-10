@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.invitation-card {
+    background: linear-gradient(135deg, #fff, #ffeb3d);
+    padding: 40px;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #555;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.invitation-card h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-style: italic;
+    color: #757575;
+    text-align: center;
+    margin: 20px;
+}
+
+.content p, .content h2, .content h3, .content h4 {
+    margin: 10px;
+    padding: 5px;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.content ul li {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.content ul li:last-child {
+    border-bottom: none;
+}
+
+strong {
+    color: #000;
+    font-weight: bold;
+}
+
+p strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.contact {
+    color: #d32f2f;
+}
